@@ -1,0 +1,49 @@
+{
+    "enabled": true,
+    "streams": [
+        {
+            "enabled": true,
+            "stream_id": "video_list_1",
+            "stream_type": "video_list",
+            "output_url": "rtmp://localhost/live/video_list_stream",
+            "loop": true,
+            "video_list": [
+                "/path/to/videos/video1.mp4",
+                "/path/to/videos/video2.mp4",
+                "/path/to/videos/video3.mp4"
+            ]
+        },
+        {
+            "enabled": true,
+            "stream_id": "rtmp_stream_1",
+            "stream_type": "rtmp",
+            "input_source": "rtmp://source.com/live/stream1",
+            "output_url": "rtmp://localhost/live/rtmp_stream",
+            "loop": false
+        },
+        {
+            "enabled": false,
+            "stream_id": "local_video_1",
+            "stream_type": "local_video",
+            "input_source": "/path/to/single/video.mp4",
+            "output_url": "rtmp://localhost/live/single_video_stream",
+            "loop": true
+        },
+        {
+            "enabled": true,
+            "stream_id": "screen_capture_1",
+            "stream_type": "screen",
+            "input_source": "screen",
+            "output_url": "rtmp://localhost/live/screen_stream",
+            "loop": false
+        },
+        {
+            "enabled": true,
+            "stream_id": "remote_video_1",
+            "stream_type": "remote_video",
+            "input_source": "http://example.com/video.mp4",
+            "output_url": "rtmp://localhost/live/remote_video_stream",
+            "loop": true
+        }
+    ]
+}
