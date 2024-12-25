@@ -38,7 +38,7 @@ class StreamPusher:
         if os.name == 'nt':  # Windows
             ffmpeg_path = os.path.join(current_dir, 'ffmpeg.exe')
         else:  # Linux/Mac
-            ffmpeg_path = os.path.join(current_dir, 'ffmpeg')
+            ffmpeg_path = os.path.join(current_dir, '../CarStream/ffmpeg')
 
         # 如果同目录下存在ffmpeg，使用它，否则使用系统ffmpeg
         if os.path.exists(ffmpeg_path):
